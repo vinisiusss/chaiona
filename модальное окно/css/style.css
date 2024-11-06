@@ -1,0 +1,75 @@
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/* div madal */
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.modal__box {
+    margin-top: 10px;
+    border-radius: 40px;
+    height: 600px;
+    width: 500px;
+    padding: 10px;
+    background-color: rgba(255, 230, 181, 1);
+    transform: scale(0);
+    transition: transform .8s;
+    text-align: center;
+}
+/* p teg and input */
+.inp{
+    border: none;
+    border-bottom: 1px solid black;
+    background: rgba(232, 224, 224, 1);
+    font-size: 15px;
+    resize: none;
+    border-radius: 3px;
+}
+
+.pteg{
+    font-size: 20px;
+}
+/* open */
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.open .modal__box {
+    transform: scale(1);
+}
+.open-btn{
+    cursor: pointer;
+}
+/* close */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+    width: 25px;
+    transition: .3s;
+    border: none;
+    font-size: 20px;
+}
+.close-btn:hover{
+    color: rgba(232, 224, 224, 1);
+}
+
+.div-stol{
+    width: 400px;
+    height: 200px;
+    background: rgba(232, 224, 224, 1);
+}

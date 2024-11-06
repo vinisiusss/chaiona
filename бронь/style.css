@@ -1,0 +1,28 @@
+.div-plan{
+    width: 490px;
+    height: 184px;
+    background: rgba(232, 224, 224, 1);
+    position: relative;
+}
+
+.nav-mini-stol{
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(112, 182, 221, 1);
+    cursor: pointer;
+}
+
+.div-top-stol{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-bot-stol{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
